@@ -27,8 +27,7 @@ services:
       -hwaccel_output_format cuda
       -i rtsp://${STREAMER_USERNAME}:${STREAMER_PASSWORD}@${IP_ADDR}/Streaming/Channels/101
       -c:v h264_nvenc
-      -preset p1
+      -preset p2
       -b:v 5M -maxrate 5M -bufsize 10M
       -g 30
-      -c:a aac -b:a 128k
       -f rtsp rtsp://vigil-mediamtx:8554/cam1
