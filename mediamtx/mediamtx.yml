@@ -2,5 +2,4 @@ logLevel: debug
 
 paths:
   cam1:
-    # sourceOnDemand: true
     rtspTransport: udp
