@@ -1,12 +1,16 @@
 services:
   mediamtx:
-    image: bluenviron/mediamtx:1.15.6
+    build:
+      context: ./mediamtx
+      dockerfile: Dockerfile
+    image: vigil-mediamtx:1.15.6
     container_name: vigil-mediamtx
     ports:
       - "8554:8554"
       - "8889:8889"
     volumes:
       - ./mediamtx/mediamtx.yml:/mediamtx.yml:ro
+      - ./scripts:/scripts:ro
 
   ffmpeg:
     image: linuxserver/ffmpeg:8.0.1

@@ -1,5 +1,6 @@
-logLevel: debug
+logLevel: info
 
 paths:
   cam1:
+    runOnInit: /scripts/hello_world.sh
     rtspTransport: udp
