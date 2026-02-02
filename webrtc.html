@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MediaMTX WebRTC Test (No STUN)</title>
+  <style>
+    body { background: #afafaf; color: #252525; font-family: sans-serif; }
+    video { width: 100%; max-width: 900px; margin-top: 20px; }
+  </style>
+
+</head>
+<body>
+  <h2>MediaMTX WebRTC – LAN / Tailscale test</h2>
+  <video id="video" controls muted autoplay width="640" height="480"></video>
+
+    <script>
+        (async () => {
+        const pc = new RTCPeerConnection({
+            iceServers: [] // no STUN/TURN required (host only)
+        });
+
+        pc.addTransceiver("video", { direction: "recvonly" });
+
+        // When a track arrives, attach it to video element
+        pc.ontrack = (event) => {
+            document.getElementById("video").srcObject = event.streams[0];
+        };
+
+        // Create SDP offer
+        const offer = await pc.createOffer();
+        await pc.setLocalDescription(offer);
+
+        // Send offer to MediaMTX WHEP endpoint
+        const resp = await fetch("http://localhost:8889/cam1/whep", {
+            method: "POST",
+            body: offer.sdp,
+            headers: {
+            "Content-Type": "application/sdp"
+            }
+        });
+
+        // Get SDP answer from server
+        const answerSDP = await resp.text();
+        await pc.setRemoteDescription({
+            type: "answer",
+            sdp: answerSDP
+        });
+
+        console.log("WHEP handshake complete");
+        })();
+    </script>
+</body>
+</html>
