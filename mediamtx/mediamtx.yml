@@ -1,6 +1,13 @@
-logLevel: info
+logLevel: debug
+
+api: yes
+rtsp: yes
+
+# webrtc: yes
+# webrtcAddress: :8889
+# webrtcEncryption: no
 
 paths:
   cam1:
-    runOnInit: /scripts/hello_world.sh
-    rtspTransport: udp
+    sourceOnDemand: yes
+    rtspTransport: tcp

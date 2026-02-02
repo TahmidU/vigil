@@ -4,6 +4,8 @@ services:
       context: ./mediamtx
       dockerfile: Dockerfile
     image: vigil-mediamtx:1.15.6
+    env_file:
+      - .env
     container_name: vigil-mediamtx
     ports:
       - "8554:8554"
@@ -11,31 +13,3 @@ services:
     volumes:
       - ./mediamtx/mediamtx.yml:/mediamtx.yml:ro
       - ./scripts:/scripts:ro
-
-  ffmpeg:
-    image: linuxserver/ffmpeg:8.0.1
-    container_name: vigil-ffmpeg
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
-      - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
-    command: >
-      -rtsp_transport tcp
-      -hwaccel cuda
-      -hwaccel_output_format cuda
-      -i rtsp://${STREAMER_USERNAME}:${STREAMER_PASSWORD}@${IP_ADDR}/Streaming/Channels/101
-      -c:v h264_nvenc
-      -an
-      -preset p2
-      -b:v 5M -maxrate 5M -bufsize 20M
-      -g 30
-      -fflags nobuffer
-      -flags low_delay
-      -use_wallclock_as_timestamps 1
-      -f rtsp rtsp://vigil-mediamtx:8554/cam1
