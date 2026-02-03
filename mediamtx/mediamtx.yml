@@ -3,9 +3,9 @@ logLevel: debug
 api: yes
 rtsp: yes
 
-# webrtc: yes
-# webrtcAddress: :8889
-# webrtcEncryption: no
+webrtc: yes
+webrtcAddress: :8889
+webrtcEncryption: no
 
 paths:
   cam1:
