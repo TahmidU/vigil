@@ -6,7 +6,8 @@ rtsp: yes
 webrtc: yes
 webrtcAddress: :8889
 webrtcEncryption: no
-webrtcAdvertisedIP: 192.168.0.31
+webrtcICEServers: []  # Explicitly disable external STUN
+webrtcICEHostNAT1To1IPs: [192.168.0.31]
 
 paths:
   cam1:

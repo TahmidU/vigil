@@ -6,48 +6,118 @@
   <style>
     body { background: #afafaf; color: #252525; font-family: sans-serif; }
     video { width: 100%; max-width: 900px; margin-top: 20px; }
+    #logs { 
+      background: #1e1e1e; 
+      color: #0f0; 
+      padding: 10px; 
+      font-family: monospace; 
+      font-size: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 20px;
+    }
   </style>
-
 </head>
 <body>
   <h2>MediaMTX WebRTC – LAN / Tailscale test</h2>
-  <video id="video" controls muted autoplay width="640" height="480"></video>
+  <video id="video" controls muted autoplay playsinline width="640" height="480"></video>
+  <div id="logs"></div>
 
-    <script>
-        (async () => {
+  <script>
+    const log = (msg) => {
+      console.log(msg);
+      const logs = document.getElementById('logs');
+      logs.innerHTML += msg + '<br>';
+      logs.scrollTop = logs.scrollHeight;
+    };
+
+    (async () => {
+      try {
         const pc = new RTCPeerConnection({
-            iceServers: [] // no STUN/TURN required (host only)
+          iceServers: []
         });
 
+        // Monitor connection states
+        pc.oniceconnectionstatechange = () => {
+          log(`ICE connection state: ${pc.iceConnectionState}`);
+        };
+
+        pc.onconnectionstatechange = () => {
+          log(`Connection state: ${pc.connectionState}`);
+        };
+
+        pc.onicegatheringstatechange = () => {
+          log(`ICE gathering state: ${pc.iceGatheringState}`);
+        };
+
+        pc.onicecandidate = (event) => {
+          if (event.candidate) {
+            log(`ICE candidate: ${event.candidate.candidate}`);
+          }
+        };
+
+        // Add transceivers
         pc.addTransceiver("video", { direction: "recvonly" });
+        pc.addTransceiver("audio", { direction: "recvonly" }); // Add audio too
 
         // When a track arrives, attach it to video element
         pc.ontrack = (event) => {
-            document.getElementById("video").srcObject = event.streams[0];
+          log(`Track received: ${event.track.kind}`);
+          document.getElementById("video").srcObject = event.streams[0];
         };
 
         // Create SDP offer
+        log("Creating offer...");
         const offer = await pc.createOffer();
         await pc.setLocalDescription(offer);
 
-        // Send offer to MediaMTX WHEP endpoint
-        const resp = await fetch("http://localhost:8889/cam1/whep", {
-            method: "POST",
-            body: offer.sdp,
-            headers: {
-            "Content-Type": "application/sdp"
-            }
+        // CRITICAL: Wait for ICE gathering to complete
+        log("Waiting for ICE candidates...");
+        await new Promise((resolve) => {
+          if (pc.iceGatheringState === 'complete') {
+            resolve();
+          } else {
+            pc.onicegatheringstatechange = () => {
+              if (pc.iceGatheringState === 'complete') {
+                resolve();
+              }
+            };
+          }
         });
+
+        log("ICE gathering complete, sending offer to MediaMTX...");
+
+        // Send offer to MediaMTX WHEP endpoint (with ICE candidates!)
+        const resp = await fetch("http://172.28.114.114:8889/cam1/whep", {
+          method: "POST",
+          body: pc.localDescription.sdp, // Use localDescription, not offer.sdp
+          headers: {
+            "Content-Type": "application/sdp"
+          }
+        });
+
+        if (!resp.ok) {
+          throw new Error(`WHEP request failed: ${resp.status} ${resp.statusText}`);
+        }
 
         // Get SDP answer from server
         const answerSDP = await resp.text();
+        log("Received answer from MediaMTX");
+        log("=== ANSWER SDP FROM MEDIAMTX ===");
+        log(answerSDP);
+        log("================================");
+        
         await pc.setRemoteDescription({
-            type: "answer",
-            sdp: answerSDP
+          type: "answer",
+          sdp: answerSDP
         });
 
-        console.log("WHEP handshake complete");
-        })();
-    </script>
+        log("WHEP handshake complete - waiting for connection...");
+      } catch (error) {
+        log(`ERROR: ${error.message}`);
+        console.error(error);
+      }
+    })();
+  </script>
 </body>
 </html>
