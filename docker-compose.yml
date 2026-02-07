@@ -2,10 +2,9 @@ services:
   mediamtx:
     build:
       context: ./mediamtx
-      dockerfile: Dockerfile
+      dockerfile: ${DOCKERFILE:-Dockerfile}
     image: vigil-mediamtx:1.15.6
-    env_file:
-      - .env
+    env_file: .env
     container_name: vigil-mediamtx
     ports:
       - "8554:8554"
