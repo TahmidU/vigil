@@ -8,7 +8,6 @@ services:
       - .env
     container_name: vigil-mediamtx
     ports:
-      - "8554:8554"
       - "8889:8889"
       - "8189:8189/tcp"
       - "8189:8189/udp" 
