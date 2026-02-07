@@ -1,0 +1,12 @@
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/bin/Debug/net10.0/Vigil.Core.deps.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/bin/Debug/net10.0/Vigil.Core.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/bin/Debug/net10.0/Vigil.Core.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.AssemblyInfoInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.AssemblyInfo.cs
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.csproj.CoreCompileInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.sourcelink.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/refint/Vigil.Core.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/ref/Vigil.Core.dll

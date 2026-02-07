@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aGp8qRTcswI=",
+  "success": true,
+  "projectFilePath": "/home/tahmidu/projects/vigil/backend/src/Vigil.Api/Vigil.Api.csproj",
+  "expectedPackageFiles": [
+    "/home/tahmidu/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/home/tahmidu/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

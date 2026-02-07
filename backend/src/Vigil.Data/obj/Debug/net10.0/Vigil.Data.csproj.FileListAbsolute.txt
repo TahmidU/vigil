@@ -1,0 +1,16 @@
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Data.deps.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Data.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Data.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Core.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Core.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.csproj.AssemblyReference.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.AssemblyInfoInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.AssemblyInfo.cs
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.csproj.CoreCompileInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.sourcelink.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.csproj.Up2Date
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/refint/Vigil.Data.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/ref/Vigil.Data.dll
