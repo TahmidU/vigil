@@ -1,7 +1,4 @@
-logLevel: debug
-
-api: yes
-rtsp: yes
+logLevel: info
 
 webrtc: yes
 webrtcAddress: :8889
