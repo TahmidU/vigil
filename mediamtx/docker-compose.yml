@@ -1,7 +1,7 @@
 services:
   mediamtx:
     build:
-      context: ./mediamtx
+      context: ./
       dockerfile: ${DOCKERFILE:-Dockerfile}
     image: vigil-mediamtx:1.15.6
     env_file: .env
@@ -12,5 +12,5 @@ services:
       - "8189:8189/tcp"
       - "8189:8189/udp" 
     volumes:
-      - ./mediamtx/mediamtx.yml:/mediamtx.yml:ro
+      - ./mediamtx.yml:/mediamtx.yml:ro
       - ./scripts:/scripts:ro
