@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "aGp8qRTcswI=",
+  "dgSpecHash": "ewiNFaRGnho=",
   "success": true,
   "projectFilePath": "/home/tahmidu/projects/vigil/backend/src/Vigil.Api/Vigil.Api.csproj",
   "expectedPackageFiles": [
+    "/home/tahmidu/.nuget/packages/dotnetenv/3.1.1/dotnetenv.3.1.1.nupkg.sha512",
     "/home/tahmidu/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
-    "/home/tahmidu/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+    "/home/tahmidu/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/tahmidu/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/home/tahmidu/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/home/tahmidu/.nuget/packages/sprache/2.3.1/sprache.2.3.1.nupkg.sha512"
   ],
   "logs": []
 }
