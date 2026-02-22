@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dvr\Implementations\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Vigil.Dvr\Vigil.Dvr.csproj" />
+    <Compile Remove="Class1.cs" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vigil.Core.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1e3f0863ebdce0569a27a1fdc66e72ae880408d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40dca2fe220327d7839f3c4ce02590378df0f3a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vigil.Core.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vigil.Core.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

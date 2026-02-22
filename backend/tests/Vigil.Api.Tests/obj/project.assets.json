@@ -544,6 +544,9 @@
       "Vigil.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Vigil.Dvr": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Vigil.Core.dll": {}
         },
@@ -562,6 +565,16 @@
         },
         "runtime": {
           "bin/placeholder/Vigil.Data.dll": {}
+        }
+      },
+      "Vigil.Dvr/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Vigil.Dvr.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vigil.Dvr.dll": {}
         }
       }
     }
@@ -1230,6 +1243,11 @@
       "type": "project",
       "path": "../../src/Vigil.Data/Vigil.Data.csproj",
       "msbuildProject": "../../src/Vigil.Data/Vigil.Data.csproj"
+    },
+    "Vigil.Dvr/1.0.0": {
+      "type": "project",
+      "path": "../../src/Vigil.Dvr/Vigil.Dvr.csproj",
+      "msbuildProject": "../../src/Vigil.Dvr/Vigil.Dvr.csproj"
     }
   },
   "projectFileDependencyGroups": {

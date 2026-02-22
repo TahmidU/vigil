@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Vigil.Dvr/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Vigil.Dvr.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vigil.Dvr.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Vigil.Dvr/1.0.0": {
+      "type": "project",
+      "path": "../Vigil.Dvr/Vigil.Dvr.csproj",
+      "msbuildProject": "../Vigil.Dvr/Vigil.Dvr.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Vigil.Dvr >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/tahmidu/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/Vigil.Dvr.csproj": {
+              "projectPath": "/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/Vigil.Dvr.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
