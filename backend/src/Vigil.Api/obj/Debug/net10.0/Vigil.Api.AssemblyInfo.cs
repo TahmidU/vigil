@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vigil.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a42d18cf6c9fb198b5c4b646fd758ecd8ba21e7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bdaf6ac379a947f8a7b86f8f8db12c851a8b533")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vigil.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vigil.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
