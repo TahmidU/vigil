@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vigil.Dvr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40dca2fe220327d7839f3c4ce02590378df0f3a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a42d18cf6c9fb198b5c4b646fd758ecd8ba21e7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vigil.Dvr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vigil.Dvr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
