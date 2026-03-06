@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vigil.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bdaf6ac379a947f8a7b86f8f8db12c851a8b533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11bf83d5cbd22759a439df5a118052c4a5b3aa5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vigil.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vigil.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

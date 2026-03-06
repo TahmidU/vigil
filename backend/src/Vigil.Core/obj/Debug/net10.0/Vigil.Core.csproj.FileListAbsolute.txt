@@ -10,3 +10,7 @@
 /home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/refint/Vigil.Core.dll
 /home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.pdb
 /home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/ref/Vigil.Core.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/bin/Debug/net10.0/Vigil.Dvr.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/bin/Debug/net10.0/Vigil.Dvr.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.csproj.AssemblyReference.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Core/obj/Debug/net10.0/Vigil.Core.csproj.Up2Date

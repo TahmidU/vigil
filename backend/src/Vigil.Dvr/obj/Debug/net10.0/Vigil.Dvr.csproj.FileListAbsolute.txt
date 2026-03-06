@@ -1,0 +1,12 @@
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/bin/Debug/net10.0/Vigil.Dvr.deps.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/bin/Debug/net10.0/Vigil.Dvr.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/bin/Debug/net10.0/Vigil.Dvr.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.GeneratedMSBuildEditorConfig.editorconfig
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.AssemblyInfoInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.AssemblyInfo.cs
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.csproj.CoreCompileInputs.cache
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.sourcelink.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/refint/Vigil.Dvr.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/Vigil.Dvr.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Dvr/obj/Debug/net10.0/ref/Vigil.Dvr.dll

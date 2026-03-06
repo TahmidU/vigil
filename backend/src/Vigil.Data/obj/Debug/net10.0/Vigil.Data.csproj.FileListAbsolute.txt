@@ -14,3 +14,7 @@
 /home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/refint/Vigil.Data.dll
 /home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.pdb
 /home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/ref/Vigil.Data.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Data.runtimeconfig.json
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Dvr.dll
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/bin/Debug/net10.0/Vigil.Dvr.pdb
+/home/tahmidu/projects/vigil/backend/src/Vigil.Data/obj/Debug/net10.0/Vigil.Data.genruntimeconfig.cache
